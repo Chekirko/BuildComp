@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <!-- <link rel="stylesheet" href="./css/styles1.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="./node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.min.css">
+
+
+    <title>About</title>
+</head>
+
+<body>
+
+    !-- Messenger Плагин чата Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Плагин чата code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "764726366915033");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v15.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="header">
+        <div class="container ">
+            <div class="header__container"><span class="logo"><img src="./images/doqejaiv.png" alt=""></span>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"> <a class="header__link" href="./">HOME</a> </li>
+                        <li class="header__item"> <a class="header__link" href="./about-page.html">ABOUT</a> </li>
+                        <li class="header__item"> <a class="header__link" href="./portfolio.html">PORTFOLIO</a> </li>
+                        <li class="header__item"> <a class="header__link" href="./contacts.html">CONTACTS</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <h1 class="about-us-title">About <span class="about-us-title--colored">us</span></h1>
+
+
+        <section class="info">
+            <div class="container">
+                <div class="info__wrapper"><img src="./images/ab4 (3).jpg" alt="" class="info__img"></div>
+                <!-- <img src="./images/ab1.jpg" alt="" class="info__img"> -->
+                <div class="info__content">
+                    <ul class="info__list">
+                        <li class="info__item">
+                            <p class="info__text">We always successfully implement the vision of our client, renovating
+                                a kitchen, bathroom or rebuilding the entire
+                                house. We have extensive experience and facilities consisting of professional equipment.
+                            </p>
+                        </li>
+                        <li class="info__item">
+                            <p class="info__text">The group of our satisfied customers is growing every year. After
+                                completing the order, we like to see the satisfied
+                                face of our client.
+                                We have been operating on the market for 12 years.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <ul class="stats__list">
+                    <li class="stats__item"><svg class="stats__icon">
+                            <use href="./images/symbol-defs.svg#icon-home"></use>
+                        </svg><span class="stats__quantity">135</span>
+                        <p class="stats__text">Home <span class="stats__text--colored">renovations</span></p>
+                    </li>
+                    <li class="stats__item"><svg class="stats__icon">
+                            <use href="./images/symbol-defs.svg#icon-users"></use>
+                        </svg><span class="stats__quantity">277</span>
+                        <p class="stats__text"><span class="stats__text--colored">Happy</span> clients</p>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper"><span class="logo logo--colored"><img src="./images/doqejaiv.png"
+                        alt=""></span>
+                <div class="menu">
+                    <h3 class="menu__title">Menu</h3>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="./">HOME</a></li>
+                        <li class="menu__item"><a class="menu__link" href="./about-page.html">ABOUT</a></li>
+                        <li class="menu__item"><a class="menu__link" href="./portfolio.html">PORTFOLIO</a></li>
+                        <li class="menu__item"><a class="menu__link" href="./contacts.html">CONTACTS</a></li>
+                    </ul>
+                </div>
+
+                <address class="address">
+                    <h4 class="address__name">Boris Johnson</h4>
+                    <p class="address__text">tel.: 1234566889</p>
+                    <p class="address__text">e-mail: johnson777@gmail.com</p>
+                    <p class="address__text">Great Britain, London, Baker Street, 52</p>
+                </address>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./aos.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/lightbox2/src/dist/js/lightbox-plus-jquery.js"></script>
+
+
+
+</body>
+
+</html>
