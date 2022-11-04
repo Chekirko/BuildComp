@@ -10,398 +10,410 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/portfolio.min.css">
+    <!-- <link rel="stylesheet" href="./css/styles1.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="./node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.min.css">
+
+
     <title>Portfolio</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="container header__container">
-            <nav class="header__nav">
-                <a href="./" class="logo header__logo">Web<span class="logo__text">Studio</span></a>
-
-                <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-container"
-                    data-menu-button>
-                    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-                        <use class="menu-btn__icon-menu" href="./symbol-defs.svg#icon-menu"></use>
-                        <use class="menu-btn__icon-cross" href="./symbol-defs.svg#icon-cross"></use>
-                    </svg>
-                </button>
-
-                <div class="menu-container" id="menu-container" data-menu>
-                    <ul class="site-nav">
-                        <li class="site-nav__item"><a href="./" class="site-nav__link">Студия</a>
-                        </li>
-                        <li class="site-nav__item"><a href="./portfolio.html"
-                                class="site-nav__link  site-nav__link--current">Портфолио</a></li>
-                        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+        <div class="container ">
+            <div class="header__container"><span class="logo"><img src="./images/doqejaiv.png" alt=""></span>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"> <a class="header__link" href="./">HOME</a> </li>
+                        <li class="header__item"> <a class="header__link" href="./about-page.html">ABOUT</a> </li>
+                        <li class="header__item"> <a class="header__link" href="./portfolio.html">PORTFOLIO</a> </li>
+                        <li class="header__item"> <a class="header__link" href="./contacts.html">CONTACTS</a> </li>
                     </ul>
-
-
-                    <ul class="contacts-nav">
-                        <li class="contacts-nav__item"><a href="mailto:info@devstudio.com"
-                                class="contacts-nav__link"><svg class="contacts-nav__icon1">
-                                    <use href="./symbol-defs.svg#icon-envelope"></use>
-                                </svg>info@devstudio.com</a></li>
-                        <li class="contacts-nav__item"><a href="tel:+380961111111"
-                                class="contacts-nav__link  contacts-nav__link--mobile"><svg class="contacts-nav__icon2">
-                                    <use href="./symbol-defs.svg#icon-smartphone"></use>
-                                </svg>+38 096 111 11 11</a></li>
-                    </ul>
-
-                    <ul class="socials-nav">
-                        <li class="socials-nav__item"><a href=""
-                                class="socials-nav__link socials-nav__link--bordered">Instagram</a></li>
-                        <li class="socials-nav__item"><a href=""
-                                class="socials-nav__link socials-nav__link--bordered">Twitter</a></li>
-                        <li class="socials-nav__item"><a href=""
-                                class="socials-nav__link socials-nav__link--bordered">Facebook</a></li>
-                        <li class="socials-nav__item"><a href="" class="socials-nav__link">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main>
-        <!--Секция Проекты-->
-        <section class="portfolio">
+
+        <h1 class="portfolio-title">Portfolio</h1>
+
+
+        <section class="bathrooms card">
             <div class="container">
-                <h1 class="portfolio__title">Projects</h1>
+                <h2 data-aos="fade-down-right" class="card__title">BATHROOMS<span class="card__title--colored"></span>
+                </h2>
+                <ul class="card__list">
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb"><a href="./images/IMG.JPG"
+                                data-lightbox="bathrooms"><img class="card__image" src="./images/bat1.jpg" alt=""></a>
 
-                <ul class="buttons">
-                    <li class="buttons__item"><button type="button" class="buttons__btn">Все</button></li>
-                    <li class="buttons__item"><button type="button" class="buttons__btn">Веб-сайты</button></li>
-                    <li class="buttons__item"><button type="button" class="buttons__btn">Приложения</button></li>
-                    <li class="buttons__item"><button type="button" class="buttons__btn">Дизайн</button></li>
-                    <li class="buttons__item"><button type="button" class="buttons__btn">Маркетинг</button></li>
-                </ul>
 
-                <ul class="projects">
-                    <li class="projects__item">
-                        <a class="projects__link" href="">
-                            <div class="projects__thumb">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                        srcset="./images/img11.370.jpg 1x, ./images/img11.370@2x.jpg 2x">
-
-                                    <source media="(min-width: 768px)"
-                                        srcset="./images/img11.354.jpg 1x, ./images/img11.354@2x.jpg 2x">
-
-                                    <source media="(max-width: 767px)"
-                                        srcset="./images/img11.450.jpg 1x, ./images/img11.450@2x.jpg 2x">
-
-                                    <img class="projects__image" src="./images/img11.354.jpg" alt="Дисплей ноутбука">
-                                </picture>
-                                <div class="projects__overlay">
-                                    <p class="projects__descr">Ресурс предлагает комплексные предложения с разным
-                                        уровнем
-                                        функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="projects__content projects__content--stretched">
-                                <h2 class="projects__title">Технокряк</h2>
-                                <p class="projects__text">Веб-сайт</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
-                    <li class="projects__item">
-                        <a class="projects__link" href="">
-                            <div class="projects__thumb">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                        srcset="./images/img12.370.jpg 1x, ./images/img12.370@2x.jpg 2x">
 
-                                    <source media="(min-width: 768px)"
-                                        srcset="./images/img12.354.jpg 1x, ./images/img12.354@2x.jpg 2x">
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <a href="./images/bat2.jpg" data-lightbox="bathrooms"><img class="card__image"
+                                    src="./images/bat2.jpg" alt=""></a>
 
-                                    <source media="(max-width: 767px)"
-                                        srcset="./images/img12.450.jpg 1x, ./images/img12.450@2x.jpg 2x">
-
-                                    <img class="projects__image" src="./images/img12.354.jpg"
-                                        alt="Баскетболисты с мячем">
-                                </picture>
-                                <div class="projects__overlay">
-                                    <p class="projects__descr">Ресурс предлагает комплексные предложения с разным
-                                        уровнем
-                                        функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="projects__content">
-                                <h2 lang="en" class="projects__title">Постер New Orlean vs Golden Star</h2>
-                                <p class="projects__text">Дизайн</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
-                    <li class="projects__item">
-                        <a class="projects__link" href="">
-                            <div class="projects__thumb">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                        srcset="./images/img13.370.jpg 1x, ./images/img13.370@2x.jpg 2x">
 
-                                    <source media="(min-width: 768px)"
-                                        srcset="./images/img13.354.jpg 1x, ./images/img13.354@2x.jpg 2x">
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <a href="./images/bat3.jpg" data-lightbox="bathrooms"><img class="card__image"
+                                    src="./images/bat3.jpg" alt=""></a>
 
-                                    <source media="(max-width: 767px)"
-                                        srcset="./images/img13.450.jpg 1x, ./images/img13.450@2x.jpg 2x">
-
-                                    <img class="projects__image" src="./images/img13.354.jpg" alt="Логотип ресторана">
-                                </picture>
-                                <div class="projects__overlay">
-                                    <p class="projects__descr">Ресурс предлагает комплексные предложения с разным
-                                        уровнем
-                                        функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="projects__content">
-                                <h2 lang="en" class="projects__title">Ресторан Seafood</h2>
-                                <p class="projects__text">Приложение</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
-                    <li class="projects__item">
-                        <a class="projects__link" href="">
-                            <div class="projects__thumb">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                        srcset="./images/img14.370.jpg 1x, ./images/img14.370@2x.jpg 2x">
 
-                                    <source media="(min-width: 768px)"
-                                        srcset="./images/img14.354.jpg 1x, ./images/img14.354@2x.jpg 2x">
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/bat4.jpg" alt="">
 
-                                    <source media="(max-width: 767px)"
-                                        srcset="./images/img14.450.jpg 1x, ./images/img14.450@2x.jpg 2x">
-
-                                    <img class="projects__image" src="./images/img14.354.jpg" alt="Наушники">
-                                </picture>
-                                <div class="projects__overlay">
-                                    <p class="projects__descr">Ресурс предлагает комплексные предложения с разным
-                                        уровнем
-                                        функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="projects__content">
-                                <h2 lang="en" class="projects__title">Проект Prime</h2>
-                                <p class="projects__text">Маркетинг</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
-                    <li class="projects__item">
-                        <a class="projects__link" href="">
-                            <div class="projects__thumb">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                        srcset="./images/img15.370.jpg 1x, ./images/img15.370@2x.jpg 2x">
 
-                                    <source media="(min-width: 768px)"
-                                        srcset="./images/img15.354.jpg 1x, ./images/img15.354@2x.jpg 2x">
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/bat5.jpg" alt="">
 
-                                    <source media="(max-width: 767px)"
-                                        srcset="./images/img15.450.jpg 1x, ./images/img15.450@2x.jpg 2x">
-
-                                    <img class="projects__image" src="./images/img15.354.jpg" alt="Две коробки">
-                                </picture>
-                                <div class="projects__overlay">
-                                    <p class="projects__descr">Ресурс предлагает комплексные предложения с разным
-                                        уровнем
-                                        функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="projects__content">
-                                <h2 lang="en" class="projects__title">Проект Boxes</h2>
-                                <p class="projects__text">Приложение</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
-                    <li class="projects__item">
-                        <a class="projects__link" href="">
-                            <div class="projects__thumb">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                        srcset="./images/img16.370.jpg 1x, ./images/img16.370@2x.jpg 2x">
 
-                                    <source media="(min-width: 768px)"
-                                        srcset="./images/img16.354.jpg 1x, ./images/img16.354@2x.jpg 2x">
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/bat6.jpg" alt="">
 
-                                    <source media="(max-width: 767px)"
-                                        srcset="./images/img16.450.jpg 1x, ./images/img16.450@2x.jpg 2x">
-
-                                    <img class="projects__image" src="./images/img16.354.jpg" alt="Дисплей">
-                                </picture>
-                                <div class="projects__overlay">
-                                    <p class="projects__descr">Ресурс предлагает комплексные предложения с разным
-                                        уровнем
-                                        функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="projects__content">
-                                <h2 lang="en" class="projects__title">Inspiration has no Borders</h2>
-                                <p class="projects__text">Веб-сайт</p>
-                            </div>
-                        </a>
+                        </div>
                     </li>
-                    <li class="projects__item">
-                        <a class="projects__link" href="">
-                            <div class="projects__thumb">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                        srcset="./images/img17.370.jpg 1x, ./images/img17.370@2x.jpg 2x">
 
-                                    <source media="(min-width: 768px)"
-                                        srcset="./images/img17.354.jpg 1x, ./images/img17.354@2x.jpg 2x">
 
-                                    <source media="(max-width: 767px)"
-                                        srcset="./images/img17.450.jpg 1x, ./images/img17.450@2x.jpg 2x">
 
-                                    <img class="projects__image" src="./images/img17.354.jpg" alt="Раскрытый журнал">
-                                </picture>
-                                <div class="projects__overlay">
-                                    <p class="projects__descr">Ресурс предлагает комплексные предложения с разным
-                                        уровнем
-                                        функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="projects__content">
-                                <h2 lang="en" class="projects__title">Издание Limited Edition</h2>
-                                <p class="projects__text">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="projects__item">
-                        <a class="projects__link" href="">
-                            <div class="projects__thumb">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                        srcset="./images/img18.370.jpg 1x, ./images/img18.370@2x.jpg 2x">
 
-                                    <source media="(min-width: 768px)"
-                                        srcset="./images/img18.354.jpg 1x, ./images/img18.354@2x.jpg 2x">
 
-                                    <source media="(max-width: 767px)"
-                                        srcset="./images/img18.450.jpg 1x, ./images/img18.450@2x.jpg 2x">
-
-                                    <img class="projects__image" src="./images/img18.354.jpg" alt="Бирочка с надписью">
-                                </picture>
-                                <div class="projects__overlay">
-                                    <p class="projects__descr">Ресурс предлагает комплексные предложения с разным
-                                        уровнем
-                                        функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="projects__content">
-                                <h2 lang="en" class="projects__title">Проект LAB</h2>
-                                <p class="projects__text">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="projects__item">
-                        <a class="projects__link" href="">
-                            <div class="projects__thumb">
-                                <picture>
-                                    <source media="(min-width: 1200px)"
-                                        srcset="./images/img19.370.jpg 1x, ./images/img19.370@2x.jpg 2x">
-
-                                    <source media="(min-width: 768px)"
-                                        srcset="./images/img19.354.jpg 1x, ./images/img19.354@2x.jpg 2x">
-
-                                    <source media="(max-width: 767px)"
-                                        srcset="./images/img19.450.jpg 1x, ./images/img19.450@2x.jpg 2x">
-
-                                    <img class="projects__image" src="./images/img19.354.jpg"
-                                        alt="Руки на клавиатуре ноутбука">
-                                </picture>
-                                <div class="projects__overlay">
-                                    <p class="projects__descr">Ресурс предлагает комплексные предложения с разным
-                                        уровнем
-                                        функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.</p>
-                                </div>
-                            </div>
-                            <div class="projects__content">
-                                <h2 lang="en" class="projects__title">Growing Business</h2>
-                                <p class="projects__text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </section>
+
+        <section class="bathrooms card">
+            <div class="container">
+                <h2 data-aos="fade-down-right" class="card__title">KITCHENS<span class="card__title--colored"></span>
+                </h2>
+                <ul class="card__list">
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit2.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit3.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit4.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit5.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit6.jpg" alt="">
+
+                        </div>
+                    </li>
+
+
+
+
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="bathrooms card">
+            <div class="container">
+                <h2 data-aos="fade-down-right" class="card__title">INTERIORS<span class="card__title--colored"></span>
+                </h2>
+                <ul class="card__list">
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+
+
+
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="bathrooms card">
+            <div class="container">
+                <h2 data-aos="fade-down-right" class="card__title">WARDROBES<span class="card__title--colored"></span>
+                </h2>
+                <ul class="card__list">
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/kit1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+
+
+
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="bathrooms card">
+            <div class="container">
+                <h2 data-aos="fade-down-right" class="card__title">WOODEN STAIRS<span
+                        class="card__title--colored"></span>
+                </h2>
+                <ul class="card__list">
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/woo1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/woo3.webp" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/woo6.webp" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/woo5.webp" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/woo2.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/woo4.jpeg" alt="">
+
+                        </div>
+                    </li>
+
+
+
+
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="bathrooms card">
+            <div class="container">
+                <h2 data-aos="fade-down-right" class="card__title">INTERIORS DESIGN<span
+                        class="card__title--colored"></span>
+                </h2>
+                <ul class="card__list">
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/int1.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/int2.jpeg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/int3.jpeg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/int4.jpg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/int5.jpeg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card__item">
+                        <div data-aos="flip-left" class="card__thumb">
+                            <img class="card__image" src="./images/int6.jpg" alt="">
+
+                        </div>
+                    </li>
+
+
+
+
+
+                </ul>
+            </div>
+        </section>-->
+
+
+
+
+
     </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer__columns">
-                <div class="info">
-                    <a href="./" class="logo footer__logo">Web<span
-                            class="logo__text logo__text--inverse">Studio</span></a>
-
-                    <address class="address">
-                        <ul class="address__list list">
-                            <li class="address__item"><a href="" class="address__link address__link--white"
-                                    target="_blank" rel="noreferrer noopener">г.
-                                    Киев,
-                                    пр-т Леси
-                                    Украинки, 26</a></li>
-                            <li class="address__item"><a href="mailto:info@devstudio.com"
-                                    class="address__link">info@devstudio.com</a>
-                            </li>
-                            <li class="address__item"><a href="tel:+380961111111" class="address__link">+38 096 111 11
-                                    11</a></li>
-                        </ul>
-                    </address>
-                </div>
-
-                <div class="join-us">
-                    <p class="join-us__title">присоединяйтесь</p>
-                    <ul class="join-us__list list">
-                        <li class="join-us__item"><a class="join-us__link" href=""><svg class="join-us__icon">
-                                    <use href="./symbol-defs.svg#icon-instagram2"></use>
-                                </svg></a></li>
-                        <li class="join-us__item"><a class="join-us__link" href=""><svg class="join-us__icon">
-                                    <use href="./symbol-defs.svg#icon-twitter2"></use>
-                                </svg></a></li>
-                        <li class="join-us__item"><a class="join-us__link" href=""><svg class="join-us__icon">
-                                    <use href="./symbol-defs.svg#icon-facebook2"></use>
-                                </svg></a></li>
-                        <li class="join-us__item"><a class="join-us__link" href=""><svg class="join-us__icon">
-                                    <use href="./symbol-defs.svg#icon-linkedin2"></use>
-                                </svg></a></li>
+            <div class="footer__wrapper"><span class="logo logo--colored"><img src="./images/doqejaiv.png"
+                        alt=""></span>
+                <div class="menu">
+                    <h3 class="menu__title">Menu</h3>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="./">HOME</a></li>
+                        <li class="menu__item"><a class="menu__link" href="./about-page.html">ABOUT</a></li>
+                        <li class="menu__item"><a class="menu__link" href="./portfolio.html">PORTFOLIO</a></li>
+                        <li class="menu__item"><a class="menu__link" href="./contacts.html">CONTACTS</a></li>
                     </ul>
                 </div>
 
-                <div class="subscribe">
-                    <p class="subscribe__title">Подпишитесь на рассылку</p>
-                    <form action="#" class="subscribe__form" autocomplete="off">
-                        <input type="email" class="subscribe__input" name="email" placeholder="E-mail">
-
-                        <button type="submit" class="subscribe__btn btn btn--primery">Подписаться<svg
-                                class="subscribe__icon">
-                                <use href="./symbol-defs.svg#icon-send"></use>
-                            </svg></button>
-                    </form>
-                </div>
+                <address class="address">
+                    <h4 class="address__name">Boris Johnson</h4>
+                    <p class="address__text">tel.: 1234566889</p>
+                    <p class="address__text">e-mail: johnson777@gmail.com</p>
+                    <p class="address__text">Great Britain, London, Baker Street, 52</p>
+                </address>
             </div>
+
         </div>
+
     </footer>
-    <script src="./mobile-menu.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./aos.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/lightbox2/src/dist/js/lightbox-plus-jquery.js"></script>
+
+
+
 </body>
 
 </html>
