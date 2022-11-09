@@ -1,49 +1,47 @@
 .stats {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.4)),
-            url(../../images/abb.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.4)),
+    url(./../images/abb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-padding: 130px 0;
-       
+  padding: 130px 0;
 }
 
 .stats__list {
-   padding: 0 300px;
-    display: flex;    
-    justify-content: space-between;
-        align-items: center;
+  padding: 0 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-        @include mq (tablet-only) {
-                padding: 0 120px;
-            }
-    
+  @include mq(tablet-only) {
+    padding: 0 120px;
+  }
 }
 
 .stats__item {
-text-align: center;
+  text-align: center;
 }
 
 .stats__icon {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    margin-bottom: 25px;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 25px;
 }
 
 .stats__quantity {
-    color: $primery-white-color;
-    font-size: 60px;
-    font-weight: 700;
-    margin-bottom: 20px;
+  color: $primery-white-color;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .stats__text {
-    color: $primery-white-color;
-    font-size: 16px;
+  color: $primery-white-color;
+  font-size: 16px;
 }
 
 .stats__text--colored {
-    @extend %section-title--secondary;
+  @extend %section-title--secondary;
 }
