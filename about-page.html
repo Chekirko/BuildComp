@@ -54,15 +54,27 @@
 
     <header class="header">
         <div class="container ">
-            <div class="header__container"><span class="logo"><img src="./images/doqejaiv.png" alt=""></span>
-                <nav class="header__nav">
-                    <ul class="header__list">
-                        <li class="header__item"> <a class="header__link" href="./">HOME</a> </li>
-                        <li class="header__item"> <a class="header__link" href="./about-page.html">ABOUT</a> </li>
-                        <li class="header__item"> <a class="header__link" href="./portfolio.html">PORTFOLIO</a> </li>
-                        <li class="header__item"> <a class="header__link" href="./contacts.html">CONTACTS</a> </li>
-                    </ul>
-                </nav>
+            <div class="header__container"><span class="logo"><img src="./images/byyvaqig.png" alt=""></span>
+                <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                        <use class="menu-btn__icon-menu" href="./images/symbol-defs1.svg#icon-menu"></use>
+                        <use class="menu-btn__icon-cross" href="./images/symbol-defs1.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" id="menu-container" data-menu>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item"> <a class="header__link" href="./">HOME</a> </li>
+                            <li class="header__item"> <a class="header__link header__link--current"
+                                    href="./about-page.html">ABOUT</a> </li>
+                            <li class="header__item"> <a class="header__link" href="./portfolio.html">PORTFOLIO</a>
+                            </li>
+                            <li class="header__item"> <a class="header__link" href="./contacts.html">CONTACTS</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+
             </div>
         </div>
     </header>
@@ -125,7 +137,7 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer__wrapper"><span class="logo logo--colored"><img src="./images/doqejaiv.png"
+            <div class="footer__wrapper"><span class="logo logo--colored"><img src="./images/byyvaqig.png"
                         alt=""></span>
                 <div class="menu">
                     <h3 class="menu__title">Menu</h3>
@@ -138,10 +150,10 @@
                 </div>
 
                 <address class="address">
-                    <h4 class="address__name">Boris Johnson</h4>
-                    <p class="address__text">tel.: 1234566889</p>
-                    <p class="address__text">e-mail: johnson777@gmail.com</p>
-                    <p class="address__text">Great Britain, London, Baker Street, 52</p>
+                    <h4 class="address__name">Vasili Secara</h4>
+                    <p class="address__text">tel.: 07899684885</p>
+                    <p class="address__text">e-mail: borisjohnson777@gmail.com</p>
+                    <p class="address__text">46 Gilchrist Avenu, Corby, Northamptonshire, NN171BA</p>
                 </address>
             </div>
 
@@ -151,9 +163,7 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./aos.js"></script>
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
-    <script src="./node_modules/lightbox2/src/dist/js/lightbox-plus-jquery.js"></script>
-
+    <script src="./mobile-menu.js"></script>
 
 
 </body>

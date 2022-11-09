@@ -127,11 +127,15 @@ body {
 
 .header {
   width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100;
   background-color: black;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
 }
 
 .header__container {
@@ -148,21 +152,89 @@ body {
   height: 100px;
 }
 
-.header__nav {
-  padding: 20px 0;
-  margin-left: auto;
+.logo__img {
+  border-radius: 30%;
 }
 
-.header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.menu-container {
+  margin-left: auto;
+  background-color: black;
+}
+.menu-container.is-open {
+  display: block;
+  z-index: 1;
+}
+@media screen and (max-width: 767.98px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 48px 40px 48px 180px;
+  }
+}
+
+.menu-btn {
+  position: relative;
+  z-index: 6;
+  margin-left: auto;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  cursor: pointer;
+  background-color: transparent;
+  fill: #2196f3;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-btn:hover, .menu-btn:focus {
+  fill: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.menu-btn__icon-cross {
+  display: none;
+  width: 100%;
+}
+.menu-btn.is-open .menu-btn__icon-cross {
+  display: block;
+}
+
+.menu-btn__icon-menu {
+  width: 100%;
+}
+.menu-btn.is-open .menu-btn__icon-menu {
+  display: none;
+}
+
+.header__nav {
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 767.98px) {
+  .header__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .header__item:not(:last-child) {
@@ -185,6 +257,9 @@ body {
 }
 .header__link:active {
   background-color: #ffffff;
+}
+.header__link--current {
+  color: #ffffff;
 }
 
 .bg-wrapper {
@@ -754,8 +829,8 @@ body {
 }
 
 .stats {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.4))), url(./../../images/abb.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.4)), url(./../../images/abb.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.4))), url(../../images/abb.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.4)), url(../../images/abb.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
