@@ -630,8 +630,20 @@ body {
 }
 
 .logo--colored {
-  width: 240px;
-  height: 240px;
+  width: 140px;
+  height: 140px;
+}
+@media screen and (min-width: 768px) {
+  .logo--colored {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__title {
@@ -649,6 +661,24 @@ body {
 }
 .menu__link:hover {
   color: #2196f3;
+}
+
+.address {
+  padding: 20px 0 20px 20px;
+}
+@media screen and (min-width: 480px) {
+  .address {
+    padding: 20px 0 20px 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .address {
+    padding: 20px 0 20px 60px;
+  }
+}
+
+.address__name {
+  margin: 0 0 10px 0;
 }
 
 .address__text:not(:last-child) {
@@ -699,16 +729,13 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
+  overflow: hidden;
 }
 .card__item:hover, .card__item:focus {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 767.98px) {
-  .card__item {
-    width: 450px;
-    height: 404px;
-  }
   .card__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -732,16 +759,9 @@ body {
   position: relative;
   overflow: hidden;
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .card__thumb {
-    width: 450px;
-    height: 294px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .card__thumb {
-    width: 354px;
-    height: 294px;
+    height: 245px;
   }
 }
 
