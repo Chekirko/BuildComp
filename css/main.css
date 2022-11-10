@@ -445,16 +445,9 @@ body {
   position: relative;
   overflow: hidden;
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .projects__thumb {
-    width: 450px;
-    height: 294px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .projects__thumb {
-    width: 354px;
-    height: 294px;
+    height: 245px;
   }
 }
 
@@ -821,13 +814,32 @@ body {
   font-family: Raleway;
   font-weight: 700;
   text-align: left;
-  padding-top: 150px;
-  padding-left: 70px;
+  padding-top: 50px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .about-us-title {
+    padding-top: 150px;
+  }
 }
 
 .info__wrapper {
-  margin-bottom: 120px;
+  background-image: url(./../images/ab1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 80px;
+  height: 200px;
+}
+@media screen and (min-width: 480px) {
+  .info__wrapper {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .info__wrapper {
+    height: 400px;
+  }
 }
 
 .info__content {
@@ -849,8 +861,8 @@ body {
 }
 
 .stats {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.4))), url(./../images/abb.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.4)), url(./../images/abb.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.4))), url(./../images/abb1.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.4)), url(./../images/abb1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -858,7 +870,7 @@ body {
 }
 
 .stats__list {
-  padding: 0 300px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,7 +881,26 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 480px) {
+  .stats__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .stats__list {
+    padding: 0 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .stats__list {
     padding: 0 120px;
   }
