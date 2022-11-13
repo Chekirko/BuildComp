@@ -25,12 +25,10 @@
   cursor: pointer;
   padding: 10px 20px;
   -webkit-transition-duration: 0.4s;
-    /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-  
-
+  /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
 
   font-family: $main-font;
   font-weight: 700;
@@ -40,37 +38,31 @@
 
   background-color: $accent-color;
   color: $primery-white-color;
-  
+
   &:after {
-      content: "";
-      background: $accent-color;
-      display: block;
-      position: absolute;
-      padding-top: 300%;
-      padding-left: 350%;
-      margin-left: -20px !important;
-      margin-top: -120%;
-      opacity: 0;
-      transition: all 0.8s
-    }
-  
-    &:active:after {
-      padding: 0;
-      margin: 0;
-      opacity: 1;
-      transition: 0s ;
+    content: '';
+    background: $accent-color;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+
+  &:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
   }
 
   &:hover {
     background-color: rgb(30, 41, 164);
   }
-  
 }
-  
- 
-
-
-
 
 %visually-hidden {
   position: absolute;
@@ -84,11 +76,6 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
-
-
-
 
 %footer-title {
   margin-bottom: 20px;

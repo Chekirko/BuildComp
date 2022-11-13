@@ -1,67 +1,67 @@
 .bg-wrapper {
-    background-image:
-        url(./../images/hero11.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(./../images/hero11.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero {
+  width: 100%;
+  padding: 190px 0px;
+  // height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 
-    width: 100%;
-    padding: 190px 0px;
-    // height: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  text-align: center;
 
-    text-align: center;
+  @include mq(mobile) {
+    margin-bottom: 0;
+  }
 }
 
-
 .hero__block {
+  display: none;
+  background-color: $primery-white-color;
+  height: 150px;
 
-    background-color: $primery-white-color;    
-    height: 150px;
-
-
-
-    @include mq (mobile) {
-        margin-left: 180px;
-
-
-    }
+  @include mq(mobile) {
+    display: block;
+    margin-left: 180px;
+  }
 }
 
 .hero__wrapper {
-display: flex;
+  display: flex;
 }
 .hero__content {
-    
- flex-basis: 800px;
+  flex-basis: 800px;
 }
 
 .hero__title {
-    @extend %section-title;
-    font-family: $secondary-font;
-    font-weight: 700;
-    color: $primery-white-color;
-    text-align: left;
-    margin-bottom: 30px;
+  @extend %section-title;
+  font-family: $secondary-font;
+  font-weight: 700;
+  color: $primery-white-color;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 .hero__title--colored {
-    @extend %section-title--secondary;
+  @extend %section-title--secondary;
 }
 
 .hero__text {
-    color: $primery-white-color;
-    text-align: left;
-    margin-bottom: 30px;
-    line-height: 1.5;
-        
+  color: $primery-white-color;
+  text-align: left;
+  margin-bottom: 30px;
+  line-height: 1.5;
 }
 
 .hero__button {
-    @extend %btn;
+  @extend %btn;
 }
 
+.route-link {
+  text-decoration: none;
+}

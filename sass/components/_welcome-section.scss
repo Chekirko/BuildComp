@@ -1,69 +1,84 @@
-.welcome {    
+.welcome {
+  height: 800px;
+  @include mq(mobile) {
     position: relative;
-    @include mq (desktop) {
-            height: 400px;
-        }
+    height: 600px;
+  }
 
-                 @include mq (tablet-only) {
-                    height: 600px;
-                    margin-bottom: 80px;
-                 }
-    
+  @include mq(desktop) {
+    height: 350px;
+  }
+
+  @include mq(tablet-only) {
+    height: 600px;
+    margin-bottom: 80px;
+  }
 }
 
 .welcome__wrapper {
-    
+  @include mq(mobile) {
     position: absolute;
+    transform: translateY(-15%) translateX(3%);
+  }
+  @media screen and (min-width: 600px) {
+    transform: translateY(-15%) translateX(-10%);
+  }
 
-    @include mq (tablet) {
-            transform: translateY(-15%) translateX(0%);
-                    }
-    @include mq (tabletBig) {
-        transform: translateY(-15%) translateX(-10%);
-        
-        }
-    @include mq (desktop) {
-        display: flex;
-            transform: translateY(-25%) translateX(3%);
-        }
-    
+  @include mq(tablet) {
+    transform: translateY(-15%) translateX(0%);
+  }
+  @include mq(tabletBig) {
+    transform: translateY(-15%) translateX(-10%);
+  }
+  @include mq(desktop) {
+    display: flex;
+    transform: translateY(-25%) translateX(3%);
+  }
 }
 
 .welcome__img-wrapper {
-
-    @include mq (tablet-only) {
-            width: 600px;       
-            height: auto;     
-        }
-    @include mq (desktop) {
-            width: 530px;
-                height: 355px;
-        }
-   
+  @media screen and (max-width: #{$mobile - 0.02}) {
+    margin-bottom: 30px;
+  }
+  @include mq(mobile) {
+    width: 400px;
+    height: auto;
+  }
+  @media screen and (min-width: 600px) {
+    width: 500px;
+  }
+  @include mq(tablet-only) {
+    width: 600px;
+    height: auto;
+  }
+  @include mq(desktop) {
+    width: 530px;
+    height: 355px;
+  }
 }
-
-
 
 .welcome__content {
+  text-align: left;
+
+  @include mq(mobile) {
     padding: 40px 50px;
-    text-align: left;
-    @include mq (desktop) {
-            width: 500px;
-        }
+  }
+  @include mq(desktop) {
+    width: 500px;
+  }
 }
 
-.welcome__title{
-    @extend %section-title;
-    text-align: left;
-    line-height: 1.5;
-    margin-bottom: 52px;
+.welcome__title {
+  @extend %section-title;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 52px;
 }
 
 .welcome__title--colored {
-    @extend %section-title--secondary;
+  @extend %section-title--secondary;
 }
 
 .welcome__button {
-    @extend %btn;
+  @extend %btn;
 }
-

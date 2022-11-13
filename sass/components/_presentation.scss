@@ -1,56 +1,70 @@
 .presentation__wrapper {
+  margin-bottom: 70px;
+
+  @include mq(tablet) {
     display: flex;
-    margin-bottom: 70px;
+  }
 }
 
 .presentation__img-wrapper {
+  @include mq(tablet) {
+    width: 580px;
+  }
 
-    @include mq (tablet) {
-            width: 580px;
-        }
-
-                @include mq (tabletBig) {
-                    width: 680px;
-                }
-    @include mq (desktop) {
-        width: 780px;
-    }
+  @include mq(tabletBig) {
+    width: 680px;
+  }
+  @include mq(desktop) {
+    width: 480px;
+  }
 }
 
-
-
 .presentation__content {
+  text-align: left;
+
+  @include mq(mobile) {
     padding: 40px;
-    text-align: left;
+  }
 
-    @include mq (tablet-only) {
-            width: 580px;           
-            padding: 0 0 0 40px;
-        }
+  @include mq(tablet-only) {
+    width: 580px;
+    padding: 0 0 0 40px;
+  }
 
-                @include mq (tabletBig) {
-                    width: 680px;                    
-                    padding-left: 60px;
-                }
+  @include mq(tabletBig) {
+    width: 680px;
+    padding-left: 60px;
+  }
 
+  @include mq(desktop) {
+    padding-top: 70px;
+  }
 }
 
 .presentation__title {
-    @extend %section-title;
-    text-align: left;
-    line-height: 1.5;
-    margin-bottom: 30px;
+  @extend %section-title;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 30px;
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .presentation__title--colored {
-    @extend %section-title--secondary;
+  @extend %section-title--secondary;
 }
 
 .presentation__text {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .presentation__button {
-    @extend %btn
+  @extend %btn;
 }
-

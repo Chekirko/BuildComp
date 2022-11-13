@@ -1,52 +1,50 @@
 .about {
-   
-    height: 220px;
-    background-color: $primery-white-color;
+  background-color: $primery-white-color;
 
-    @include mq (tablet) {
-            position: relative;            
-        }
+  @include mq(mobile-only) {
+    padding-top: $card-set-gap;
+    margin-bottom: 70px;
+  }
+
+  @include mq(tablet) {
+    position: relative;
+    height: 220px;
+  }
 }
 
 .about__wrapper {
-      
-    background-color: $primery-white-color;
+  background-color: $primery-white-color;
 
-    @include mq (tablet) {
-        position: absolute;
-            transform: translateY(-50%) translateX(10%);
-            width: 680px;
-            padding: 58px;           
-        }
+  @include mq(tablet) {
+    position: absolute;
+    transform: translateY(-50%) translateX(10%);
+    width: 680px;
+    padding: 58px;
+  }
 
-                  @include mq (tabletBig) {                      
-                      width: 830px;
-                    
-                  }
-                 @include mq (desktop) {
-                                      
-                     width: 980px;
-                     
-                 }
+  @include mq(tabletBig) {
+    width: 830px;
+  }
+  @include mq(desktop) {
+    width: 980px;
+  }
 }
 
 .about__title {
-    @extend %section-title;
-    margin-bottom: 52px;
-    text-align: left
-
+  @extend %section-title;
+  margin-bottom: 52px;
+  text-align: left;
 }
 
 .about__title--colored {
-    @extend %section-title--secondary;
+  @extend %section-title--secondary;
 }
 
 .about__text {
-    line-height: 1.5;
-    margin-bottom: 52px;
+  line-height: 1.5;
+  margin-bottom: 52px;
 }
 
 .about__button {
-    @extend %btn;
+  @extend %btn;
 }
-
