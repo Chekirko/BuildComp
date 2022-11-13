@@ -1,0 +1,112 @@
+.contacts__title {
+  @extend %section-title;
+  font-family: $secondary-font;
+  font-weight: 700;
+  text-align: left;
+  padding-top: 50px;
+  margin-bottom: 20px;
+
+  @include mq(tablet) {
+    padding-top: 150px;
+  }
+}
+
+.contacts__title--colored {
+  @extend %section-title--secondary;
+}
+
+.upper-bg__wrapper {
+  background-image: url(./../images/bedr1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 120px;
+  height: 200px;
+
+  @include mq(mobile) {
+    height: 300px;
+  }
+
+  @include mq(tablet) {
+    height: 400px;
+  }
+}
+
+.contacts-text {
+  margin-bottom: 40px;
+}
+
+.contacts__list {
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1 * $card-set-gap;
+    margin-top: -1 * $card-set-gap;
+    margin-bottom: 80px;
+  }
+}
+
+.contacts__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 70px;
+  height: 150px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  @include mq(tablet) {
+    flex-basis: calc(100% / 2 - #{$card-set-gap});
+    margin-top: $card-set-gap;
+    margin-left: $card-set-gap;
+  }
+}
+
+.contacts__sign {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-70%) translateX(40%);
+
+  @include mq(tablet) {
+    transform: translateY(-60%) translateX(40%);
+  }
+
+  @include mq(desktop) {
+    transform: translateY(-30%) translateX(40%);
+  }
+}
+
+.contacts__icon {
+  padding: 10px;
+  background-color: $accent-color;
+  fill: $primery-white-color;
+  width: 80px;
+  height: 80px;
+}
+
+.contacts__subtitle {
+  color: $primery-text-color;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contacts__info {
+  text-align: center;
+}
+
+.contacts__link {
+  text-align: center;
+  text-decoration: none;
+}
+
+.contacts__fb {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: $accent-color;
+  fill: white;
+}
